@@ -1,0 +1,38 @@
+ def initialize(title, author) 
+
+    @title = title 
+
+    @author = author 
+
+  end 
+  
+
+  def display_info 
+
+    puts "Title: #{@title}, Author: #{@author}" 
+
+  end 
+
+
+  def self.create_from_input 
+
+    print "Enter the book title: " 
+
+    title = gets.chomp   
+
+    print "Enter the book author: " 
+
+    author = gets.chomp   
+
+    new(title, author)   
+
+  end 
+
+end 
+
+book = Book.create_from_input 
+
+  
+book.display_info 
+
+ 

@@ -1,0 +1,11 @@
+def remove_duplicates(array) 
+
+  array.uniq 
+
+end 
+
+array = [1, 2, 2,3, 46, 47, 4, 565, 000, 3, 4, 4, 5] 
+
+unique_array = remove_duplicates(array) 
+
+puts unique_array.inspect   
